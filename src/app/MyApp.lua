@@ -11,6 +11,9 @@ end
 
 function MyApp:run()
     cc.FileUtils:getInstance():addSearchPath("res/")
+
+    display.addSpriteFrames("poker.plist","poker.png")
+
     self:enterScene("MainScene")
 end
 
